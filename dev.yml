@@ -1,0 +1,34 @@
+name: flow-connector-demo
+
+type: rails
+
+up:
+  - homebrew:
+    - openssl
+    - shopify/shopify/mysql-client:
+        or:        [mysql]
+        conflicts: [mysql-connector-c]
+  - ruby: 2.6.1
+  - bundler
+  - railgun
+  - database:
+      bootstrap: bin/rails db:create db:migrate db:schema:load
+      migrate: bin/rails db:migrate db:test:prepare
+      host: flow-connector-demo.railgun
+      user: root
+      password: ''
+      database: flow-connector-demo_development
+
+server:
+  port: 6325
+
+commands:
+  console: bin/rails console
+  test:
+    syntax:
+      argument: file
+      optional: args...
+    run:    bin/rails test
+
+open:
+  "My Application": https://flow-connector-demo.myshopify.io
