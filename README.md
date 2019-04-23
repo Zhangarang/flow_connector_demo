@@ -1,24 +1,8 @@
-# README
+# This app doesn't work! It simply exists to facilitate a Flow connector
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+* Keys for app lives at https://partners.shopify.com/983650/apps/2867439
 
-* Ruby version
+* Enter keys [here](https://github.com/Zhangarang/flow_connector_demo/blob/master/config/initializers/shopify_app.rb)
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Checkout the Flow connector [here](https://app.shopify.com/services/internal/shops/6899957842)
